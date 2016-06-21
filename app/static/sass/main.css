@@ -1,0 +1,7 @@
+/*THIS IS THE GLOBAL SASS FILE FOR THE SNS WEBSITE
+  IT CONTAINS ALL THE SCSS FOR THE CSS CLASSES AND OTHER STYLING INFO*/
+/*This imports the mixins, placeholders, and variables from the helper folder*/
+/*This imports all outside Google fonts*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*# sourceMappingURL=main.css.map */
