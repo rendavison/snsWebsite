@@ -46,12 +46,15 @@ a {
 /*Informational footer*/
 .footer {
   width: 100%;
+  margin: 0px;
   background: #eee;
   border-top: 3px solid #d37130;
   padding: 10px;
-  font-size: 10px;
-  color: #aaa; }
+  font-size: 12px;
+  color: #555; }
   .footer h1 {
     font-size: 22px; }
+  .footer td {
+    vertical-align: top; }
 
 /*# sourceMappingURL=main.css.map */

@@ -19,6 +19,8 @@
     <!--This imports the CSS-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sass/main.css')  }}">
 
+    <!--This makes the favicon work-->
+    <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
   </head>
 
   <body>
@@ -44,41 +46,39 @@
 
     {% block content %} {% endblock %}
 
-    <div class="footer" align="center">
-      <table style="width: 600px;"><tr>
+    <table class="footer"><tr>
 
-        <td align="left">
-          <h1>
-            Board of Directors
-          </h1>
-          <div style="margin-top: -5px;">
-            Ryan LaPré (President)<br>
-            Grace Lazos (Vice President)<br>
-            Maggie Davis (Artistic Director)<br>
-            Keaton Shapiro (Managing Director)<br>
-            Alexandra Halberstadt (Secretary)<br>
-            Caroline Hermans (Public Relations Coordinator)<br>
-            Michael Wagner (Technical Coordinator)<br>
-            Heather Graci (General Membership Coordinator)<br>
-            Emily Broude (Executive Board Member)
-          </div>
-        </td>
+        <td align="left" style="padding-left: 400px;">
+        <h1>
+          Board of Directors
+        </h1>
+        <div style="margin-top: -5px;">
+          Ryan LaPré (President)<br>
+          Grace Lazos (Vice President)<br>
+          Maggie Davis (Artistic Director)<br>
+          Keaton Shapiro (Managing Director)<br>
+          Alexandra Halberstadt (Secretary)<br>
+          Caroline Hermans (Public Relations Coordinator)<br>
+          Michael Wagner (Technical Coordinator)<br>
+          Heather Graci (General Membership Coordinator)<br>
+          Emily Broude (Executive Board Member)
+        </div>
+      </td>
 
-        <td valign="top">
-          <h1>
-            Contact Us
-          </h1>
-          <div style="positon: relative; top: -5px;">
-            <a href="mailto:board@snstheatre.org">board@snstheatre.org</a><p />
-            <b>Scotch'n'Soda Theatre</b><br>
-            5000 Forbes Avenue<br>
-            UC Suite 103, Box #57<br>
-            Pittsburgh, PA 15213
-          </div>
-        </td>
-
-      </tr></table>
-    </div>
+      <td style="float: right; padding-right: 400px;">
+        <h1>
+          Contact Us
+        </h1>
+        <div style="positon: relative; top: -5px;">
+          <a href="mailto:board@snstheatre.org">board@snstheatre.org</a><p />
+          <b>Scotch'n'Soda Theatre</b><br>
+          5000 Forbes Avenue<br>
+          UC Suite 103, Box #57<br>
+          Pittsburgh, PA 15213
+        </div>
+      </td>
+  
+    </tr></table>
 
   </body>
 </html>
