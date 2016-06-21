@@ -16,12 +16,32 @@
       <title>Scotch'n'Soda Theatre</title>
     {% endif %} 
 
-    <!---This imports the CSS-->
-    <link rel="stylesheet" type="text/css" href="sass/main.css">
+    <!--This imports the CSS-->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sass/main.css')  }}">
 
   </head>
 
   <body>
+
+    <!--Navigation Bar-->
+
+    <table class="topbar"><tr>
+
+      <td>
+        <img src="http://i65.tinypic.com/dyups6.jpg" />
+      </td>
+
+      <td align="right">
+        <a style="margin-right: 10px;" href="/">home</a>
+        <a style="margin-right: 10px;" href="/about">about us</a>
+        <a style="margin-right: 10px;" href="/tickets">tickets</a>
+        <a style="margin-right: 10px;" href="/join">get involved</a>
+        <a style="margin-right: 10px;" href="/subtroupes">subtroupes</a>
+        <a style="margin-right: 10px;" href="/alumni">alumni</a>
+      </td>
+
+    </tr></table> 
+
     {% block content %} {% endblock %}  
   </body>
 </html>

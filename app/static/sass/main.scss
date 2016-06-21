@@ -8,3 +8,40 @@
 
 /*This imports all outside Google fonts*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*Global classes*/
+body {
+  font-family: $body-font;
+  color: $body-color;
+  font-size: 12px;
+  background: $background-color;
+  margin: auto;
+  text-align: left;
+}
+
+a {
+  color: $sns-orange;
+  text-decoration: none;
+  @include transition-duration(0.5s);
+
+  &:hover {
+    opacity: 0.5;
+    @include transition-duration(0.5s);
+  }
+}
+
+/*Top navigation bar*/
+
+.topbar {
+  background: $sns-orange;
+  padding: 10px;
+  width: 100%;
+  margin: auto;
+  height: 75px;
+
+    a {
+      color: white;
+      text-transform: uppercase;
+      font-size: 20px;
+    }
+}
