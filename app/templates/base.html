@@ -1,0 +1,23 @@
+<!-- The base html file for the SnS website.
+
+  This will allow us to use template inheritance in python flask 
+  to keep the website pages in sync.
+
+-->
+
+<html>
+  <head>
+    {% if title %} 
+      <title>SnS - {{ title }}</title>
+    {% else %} 
+      <title>Scotch'n'Soda Theatre</title>
+    {% endif %} 
+  </head>
+
+  <body>
+    <div style="width: 100%; background: #ccc; height: 100px; padding: 10px; text-align: center; font-family: arial; color: black; font-size: 12px;">
+      <a href="/">INDEX</a> - <a href="/red">RED</a>
+    </div>
+    {% block content %} {% endblock %}  
+  </body>
+</html>
