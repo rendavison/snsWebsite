@@ -9,8 +9,6 @@
 /*Global classes*/
 body {
   font-family: "Open Sans", Helvetica, sans-serif;
-  color: black;
-  font-size: 12px;
   background: white;
   margin: auto;
   text-align: left; }
@@ -35,10 +33,25 @@ a {
   padding: 10px;
   width: 100%;
   margin: auto;
-  height: 75px; }
+  height: 75px;
+  position: fixed; }
   .topbar a {
     color: white;
     text-transform: uppercase;
     font-size: 20px; }
+  .topbar img {
+    height: 45px;
+    float: left; }
+
+/*Informational footer*/
+.footer {
+  width: 100%;
+  background: #eee;
+  border-top: 3px solid #d37130;
+  padding: 10px;
+  font-size: 10px;
+  color: #aaa; }
+  .footer h1 {
+    font-size: 22px; }
 
 /*# sourceMappingURL=main.css.map */

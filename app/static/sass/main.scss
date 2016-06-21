@@ -12,8 +12,6 @@
 /*Global classes*/
 body {
   font-family: $body-font;
-  color: $body-color;
-  font-size: 12px;
   background: $background-color;
   margin: auto;
   text-align: left;
@@ -38,10 +36,31 @@ a {
   width: 100%;
   margin: auto;
   height: 75px;
+  position: fixed;
 
     a {
       color: white;
       text-transform: uppercase;
       font-size: 20px;
     }
+
+    img {
+      height: 45px;
+      float: left;
+    }
+}
+
+/*Informational footer*/
+
+.footer {
+  width: 100%;
+  background: #eee;
+  border-top: 3px solid $sns-orange;
+  padding: 10px;
+  font-size: 10px;
+  color: #aaa;
+
+  h1 {
+    font-size: 22px;
+  }
 }

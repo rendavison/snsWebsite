@@ -4,3 +4,9 @@
   -moz-transition-duration: $duration;
   -o-transition-duration: $duration;
 }
+
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
