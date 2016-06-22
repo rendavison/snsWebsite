@@ -10,10 +10,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 /*Global classes*/
-body {
+html, body {
   font-family: $body-font;
   background: $background-color;
-  margin: auto;
+  margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
   text-align: left;
 }
 
@@ -54,11 +56,11 @@ a {
 
 .content {
   background: $regular-gray;
-  width: 200px;
+  width: 260px;
   height: 0px;
   overflow: hidden;
   margin-top: 10px;
-  padding: 10px 5px 10px 10px;
+  padding: 10px 10px 10px 10px;
   opacity: 0;
   color: $body-color;
   font-family: $body-font;
@@ -79,18 +81,17 @@ a {
   background: $sns-orange;
   color: white;
   text-align: right;
-  text-transform: lowercase;
   font-size: 13px;
   font-style: italic;
   font-family: serif;
   @include transition-duration(0.5s);
 
   &:hover {
-    width: 200px;
+    width: 265px;
     @include transition-duration(0.5s);
 
     .content {
-      height: 185px;
+      height: 140px;
       opacity: 1;
       @include transition-delay(0.5s);
       @include transition-duration(0.5s);
@@ -101,21 +102,15 @@ a {
 /*Informational footer*/
 
 .footer {
-  display: none;
   width: 100%;
-  margin: 0px;
-  background: #eee;
-  border-top: 3px solid $sns-orange;
-  padding: 10px;
-  font-size: 12px;
-  color: #555;
-  overflow: hidden;
+  background: $regular-gray;
+  border-top: 2px solid $sns-orange;
+  padding: 5px;
+  font-size: 11px;
+  color: #777;
+  text-align: center;
 
   h1 {
-    font-size: 22px;
-  }
-
-  td {
-    vertical-align: top;
+    font-size: 15px;
   }
 }

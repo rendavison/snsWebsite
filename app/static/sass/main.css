@@ -7,10 +7,12 @@
 /*This imports all outside Google fonts*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 /*Global classes*/
-body {
+html, body {
   font-family: "Open Sans", Helvetica, sans-serif;
   background: white;
-  margin: auto;
+  margin: 0px;
+  width: 100%;
+  overflow-x: hidden;
   text-align: left; }
 
 a {
@@ -46,11 +48,11 @@ a {
 /*Board tab*/
 .content {
   background: #eeeeee;
-  width: 200px;
+  width: 260px;
   height: 0px;
   overflow: hidden;
   margin-top: 10px;
-  padding: 10px 5px 10px 10px;
+  padding: 10px 10px 10px 10px;
   opacity: 0;
   color: black;
   font-family: "Open Sans", Helvetica, sans-serif;
@@ -73,7 +75,6 @@ a {
   background: #d37130;
   color: white;
   text-align: right;
-  text-transform: lowercase;
   font-size: 13px;
   font-style: italic;
   font-family: serif;
@@ -82,13 +83,13 @@ a {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s; }
   .tab:hover {
-    width: 200px;
+    width: 265px;
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s; }
     .tab:hover .content {
-      height: 180px;
+      height: 140px;
       opacity: 1;
       transition-delay: 0.5s;
       -webkit-transition-delay: 0.5s;
@@ -101,18 +102,14 @@ a {
 
 /*Informational footer*/
 .footer {
-  display: none;
   width: 100%;
-  margin: 0px;
-  background: #eee;
-  border-top: 3px solid #d37130;
-  padding: 10px;
-  font-size: 12px;
-  color: #555;
-  overflow: hidden; }
+  background: #eeeeee;
+  border-top: 2px solid #d37130;
+  padding: 5px;
+  font-size: 11px;
+  color: #777;
+  text-align: center; }
   .footer h1 {
-    font-size: 22px; }
-  .footer td {
-    vertical-align: top; }
+    font-size: 15px; }
 
 /*# sourceMappingURL=main.css.map */
