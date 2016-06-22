@@ -50,9 +50,58 @@ a {
     }
 }
 
+/*Board tab*/
+
+.content {
+  background: $regular-gray;
+  width: 200px;
+  height: 0px;
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 10px 5px 10px 10px;
+  opacity: 0;
+  color: $body-color;
+  font-family: $body-font;
+  text-align: left;
+  font-style: normal;
+  font-size: 11px;
+  margin-left: -5px;
+  @include transition-duration(0.5s);
+}
+  
+.tab {
+  width: 100px;
+  height: 20px;
+  padding: 10px 10px 5px 5px;
+  position: fixed;
+  left: 0px;
+  top: 15%;
+  background: $sns-orange;
+  color: white;
+  text-align: right;
+  text-transform: lowercase;
+  font-size: 13px;
+  font-style: italic;
+  font-family: serif;
+  @include transition-duration(0.5s);
+
+  &:hover {
+    width: 200px;
+    @include transition-duration(0.5s);
+
+    .content {
+      height: 185px;
+      opacity: 1;
+      @include transition-delay(0.5s);
+      @include transition-duration(0.5s);
+    }
+  }
+}
+
 /*Informational footer*/
 
 .footer {
+  display: none;
   width: 100%;
   margin: 0px;
   background: #eee;
@@ -60,6 +109,7 @@ a {
   padding: 10px;
   font-size: 12px;
   color: #555;
+  overflow: hidden;
 
   h1 {
     font-size: 22px;
