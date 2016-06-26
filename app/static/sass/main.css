@@ -36,6 +36,7 @@ a {
   width: 100%;
   margin: auto;
   height: 75px;
+  z-index: 999;
   position: fixed; }
   .topbar a {
     color: white;
@@ -58,6 +59,7 @@ a {
   font-family: "Open Sans", Helvetica, sans-serif;
   text-align: left;
   font-style: normal;
+  z-index: 99;
   font-size: 11px;
   margin-left: -5px;
   transition-duration: 0.5s;
@@ -71,6 +73,7 @@ a {
   padding: 10px 10px 5px 5px;
   position: fixed;
   left: 0px;
+  z-index: 99;
   top: 15%;
   background: #d37130;
   color: white;
@@ -99,6 +102,13 @@ a {
       -webkit-transition-duration: 0.5s;
       -moz-transition-duration: 0.5s;
       -o-transition-duration: 0.5s; }
+
+/*Carousel Styling*/
+.slideshow {
+  margin-top: 10%;
+  margin-bottom: -10%; }
+  .slideshow img {
+    border: 10px solid #eeeeee; }
 
 /*Informational footer*/
 .footer {

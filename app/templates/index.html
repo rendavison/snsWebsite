@@ -1,4 +1,28 @@
 {% extends "base.html" %}
 {% block content %}
-  <div style="width: 100%; height: 300px; background: white; padding: 20px;"></div>
+
+<!--Carousel | Made by Slick-->
+
+  <div class="slideshow" align="center">
+    <div><img src="http://placehold.it/640x480"></div>
+    <div><img src="http://placehold.it/640x480/eeeeee/000000"></div>
+    <div><img src="http://placehold.it/640x480/000000/ffffff"></div>
+  </div>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-migrate-1.21.js') }}"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='slick/slick.min.js') }}"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slideshow').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        arrows: true
+      });
+    });
+  </script>
+  
 {% endblock %}

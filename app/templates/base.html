@@ -16,8 +16,10 @@
       <title>Scotch'n'Soda Theatre</title>
     {% endif %} 
 
-    <!--This imports the CSS-->
+    <!--This imports the main CSS and the slideshow CSS-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sass/main.css')  }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick.css')}}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick-theme.css') }}"/>
 
     <!--This makes the favicon work-->
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
