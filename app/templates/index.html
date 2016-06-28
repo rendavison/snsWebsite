@@ -1,13 +1,29 @@
 {% extends "base.html" %}
 {% block content %}
+  
+  <div class="tab">announcements
+    <div class="content">
+      Attend our General Body Meeting for the coming semester, date and time TBD!
+    </div>
+  </div>
+
+  <div class="homebox" align="right">
+    <h1>
+      Scotch'n'Soda Theatre
+    </h1>
+    <div class="text">
+      Breaking legs at Carnegie Mellon University since 1938!
+    </div>
+  </div>
 
 <!--Carousel | Made by Slick-->
 
   <div class="slideshow" align="center">
-    <div><img src="http://placehold.it/640x480"></div>
-    <div><img src="http://placehold.it/640x480/eeeeee/000000"></div>
-    <div><img src="http://placehold.it/640x480/000000/ffffff"></div>
-    <div><img src="http://placehold.it/640x480/555555/ffffff"></div>
+    <div><img src="{{ url_for('static', filename='images/homepage1.jpg') }}"></div>
+    <div><img src="{{ url_for('static', filename='images/homepage2.jpg') }}"></div>
+    <div><img src="{{ url_for('static', filename='images/homepage3.jpg') }}"></div>
+    <div><img src="{{ url_for('static', filename='images/homepage4.jpg') }}"></div>
+    <div><img src="{{ url_for('static', filename='images/homepage5.jpg') }}"></div>
   </div>
 
   <script type="text/javascript" src="{{ url_for('static', filename='js/jquery-3.0.0.min.js') }}"></script>
@@ -17,22 +33,14 @@
   <script type="text/javascript">
     $(document).ready(function(){
       $('.slideshow').slick({
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true
+        infinite: true,
+        autoplay: true,
+        arrows: false,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear'
       });
     });
   </script>
-
-  <h1>
-    Scotch'n'Soda: breaking legs since 1938!
-  </h1>
-
-  <div style="width: 50%; padding-left: 30px; padding-bottom: 10px;">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper ut dui vel facilisis. Suspendisse non nisl tortor. Nulla tellus augue, ultrices at leo quis, hendrerit efficitur magna. Aliquam vel nunc quis lacus sollicitudin ullamcorper et a erat. Nulla et augue molestie, fringilla nibh ut, imperdiet tellus. Maecenas a hendrerit purus. Vestibulum ultrices congue ex sed mollis. Donec congue ex vitae congue porta. Fusce sit amet enim quis mi aliquet commodo et sed mauris. Maecenas eleifend neque a nisi pellentesque, ac tincidunt nulla imperdiet.
-  <p />
-    Suspendisse vitae varius tortor. In porta in risus quis ullamcorper. Nulla lacinia nunc a lorem finibus, eu euismod sem imperdiet. Mauris condimentum turpis non ante condimentum, vitae venenatis velit lacinia. Vivamus in faucibus libero. Maecenas lobortis dignissim leo sed pretium. Aliquam erat volutpat. Phasellus consectetur nisl at tempus sollicitudin.
-  </div>
-
 
 {% endblock %}

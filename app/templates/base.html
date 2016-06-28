@@ -32,7 +32,9 @@
     <table class="topbar"><tr>
 
       <td>
-        <img src="http://i64.tinypic.com/29gd3bq.png" />
+        <a href="/">
+          <img src="{{ url_for('static', filename='images/sns_logo.png')  }}" />
+        </a>
       </td>
 
       <td align="right">
@@ -44,37 +46,17 @@
         <a style="margin-right: 10px;" href="/alumni">alumni</a>
       </td>
 
-   </tr></table>
-
-   <!--Board tab-->
-
-   <div class="tab">our board
-     <div class="content">
-       Ryan LaPré (President)<br>
-       Grace Lazos (Vice President)<br>
-       Maggie Davis (Artistic Director)<br>
-       Keaton Shapiro (Managing Director)<br>
-       Alexandra Halberstadt (Secretary)<br>
-       Caroline Hermans (Public Relations Coordinator)<br>
-       Michael Wagner (Techincal Coordinator)<br>
-       Heather Graci (General Membership Coodrinator)<br>
-       Emily Broude (Executive Board Member)
-     </div>
-   </div>
+    </tr></table>
 
     {% block content %} {% endblock %}
 
     <div class="footer">
-      <h2>
-        Contact Us
-      </h2>
-      <div style="positon: relative; top: -5px;">
-        <a href="mailto:board@snstheatre.org">board@snstheatre.org</a><p />
-        <b>Scotch'n'Soda Theatre</b><br>
-        5000 Forbes Avenue<br>
-        UC Suite 103, Box #57<br>
-        Pittsburgh, PA 15213
-      </div>
+      <a href="http://www.facebook.com/snstheatre" style="margin-right: 20px;">
+        facebook.com/snstheatre
+      </a>              
+      <a href="mailto:board@snstheatre.org" style="padding-right: 80px;">
+        board@snstheatre.org
+      </a>
     </div>  
 
   </body>

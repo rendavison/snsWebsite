@@ -7,7 +7,7 @@
 @import "helper/variables";
 
 /*This imports all outside Google fonts*/
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
 
 /*Global classes*/
 html, body {
@@ -31,11 +31,11 @@ a {
 }
 
 h1 {
-  color: $sns-orange;
+  color: black;
   font-size: 25px;
-  font-family: georgia;
-  padding-left: 20px;
-  font-weight: normal;
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 5px;
 }
 
 /*Top navigation bar*/
@@ -46,7 +46,7 @@ h1 {
   width: 100%;
   margin: auto;
   height: 75px;
-  z-index: 999;
+  z-index: 9999;
   position: fixed;
 
     a {
@@ -56,12 +56,12 @@ h1 {
     }
 
     img {
-      height: 45px;
+      height: 65px;
       float: left;
     }
 }
 
-/*Board tab*/
+/*Announcements*/
 
 .content {
   background: $regular-gray;
@@ -113,10 +113,11 @@ h1 {
 /*Carousel Styling*/
 
 .slideshow {
-  margin-top: 10%;
-  
+  margin-top: 75px;
+  overflow: hidden;
+
   img {
-    border: 10px solid $regular-gray;
+    width: 100%
   }
 }
 
@@ -125,13 +126,28 @@ h1 {
 .footer {
   width: 100%;
   background: $regular-gray;
-  border-top: 2px solid $sns-orange;
-  padding: 5px;
-  font-size: 11px;
+  padding: 30px;
   color: #777;
-  text-align: center;
+  text-align: right;
+}
 
-  h2 {
-    font-size: 15px;
+/*Breaking legs*/
+
+.homebox {
+  width: 280px;
+  height: 130px;
+  background: white;
+  opacity: 0.6;
+  z-index: 999;
+  position: absolute;
+  top: 15%;
+  right: 100px;
+  padding: 10px;
+
+  .text {
+    font-size: 20px;
+    text-align: center;
+    font-style: italic;
+    color: black;
   }
 }
