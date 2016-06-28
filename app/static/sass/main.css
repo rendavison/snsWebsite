@@ -43,10 +43,13 @@ h1 {
   margin: auto;
   height: 75px;
   z-index: 9999;
-  position: fixed; }
+  position: fixed;
+  font-weight: normal; }
   .topbar a {
     color: white;
     font-size: 20px; }
+    .topbar a.current {
+      font-style: italic; }
   .topbar img {
     height: 65px;
     float: left; }
