@@ -30,6 +30,14 @@ a {
   }
 }
 
+h1 {
+  color: $sns-orange;
+  font-size: 25px;
+  font-family: georgia;
+  padding-left: 20px;
+  font-weight: normal;
+}
+
 /*Top navigation bar*/
 
 .topbar {
@@ -106,7 +114,6 @@ a {
 
 .slideshow {
   margin-top: 10%;
-  height: auto;
   
   img {
     border: 10px solid $regular-gray;
@@ -124,7 +131,7 @@ a {
   color: #777;
   text-align: center;
 
-  h1 {
+  h2 {
     font-size: 15px;
   }
 }

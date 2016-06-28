@@ -29,6 +29,13 @@ a {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s; }
 
+h1 {
+  color: #d37130;
+  font-size: 25px;
+  font-family: georgia;
+  padding-left: 20px;
+  font-weight: normal; }
+
 /*Top navigation bar*/
 .topbar {
   background: #d37130;
@@ -105,8 +112,7 @@ a {
 
 /*Carousel Styling*/
 .slideshow {
-  margin-top: 10%;
-  margin-bottom: -10%; }
+  margin-top: 10%; }
   .slideshow img {
     border: 10px solid #eeeeee; }
 
@@ -119,7 +125,7 @@ a {
   font-size: 11px;
   color: #777;
   text-align: center; }
-  .footer h1 {
+  .footer h2 {
     font-size: 15px; }
 
 /*# sourceMappingURL=main.css.map */
