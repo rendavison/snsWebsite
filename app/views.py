@@ -5,6 +5,6 @@ from app import website
 def index():
   return render_template('index.html')
 
-@website.route('/red')
-def index2():
-  return render_template('index2.html', title="red")
+@website.route('/about.html')
+def about():
+  return render_template('about.html', title="About Us")

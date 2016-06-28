@@ -51,7 +51,6 @@ h1 {
 
     a {
       color: white;
-      text-transform: uppercase;
       font-size: 20px;
     }
 
@@ -136,8 +135,7 @@ h1 {
 .homebox {
   width: 280px;
   height: 130px;
-  background: white;
-  opacity: 0.6;
+  background: rgba(255, 255, 255, 0.6);
   z-index: 999;
   position: absolute;
   top: 15%;
