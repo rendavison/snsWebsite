@@ -9,7 +9,6 @@
   <head>
 
     <!--This controls the webpage title-->
-
     {% if title %} 
       <title>SnS - {{ title }}</title>
     {% else %} 
@@ -56,6 +55,8 @@
     </tr></table>
 
     {% block content %} {% endblock %}
+
+    <!--Footer-->
 
     <div class="footer">
       <a href="http://www.facebook.com/snstheatre" style="margin-right: 20px;">

@@ -11,6 +11,7 @@ html, body {
   background: white;
   margin: 0px;
   width: 100%;
+  font-size: 14px;
   overflow-x: hidden;
   text-align: left; }
 
@@ -29,11 +30,27 @@ a {
     -o-transition-duration: 0.5s; }
 
 h1 {
-  color: black;
   font-size: 25px;
   text-align: center;
   font-style: italic;
   margin-bottom: 5px; }
+
+h2 {
+  font-size: 18px;
+  font-style: italic;
+  font-weight: normal; }
+
+h3 {
+  font-size: 16px;
+  font-weight: normal; }
+
+.container {
+  width: 100%;
+  padding-left: 50px;
+  padding-top: 10px;
+  margin-top: 95px;
+  margin-bottom: 30px;
+  background: transparent; }
 
 /*Top navigation bar*/
 .topbar {
