@@ -16,3 +16,7 @@ def tickets():
 @website.route('/join.html')
 def join():
   return render_template('join.html', title="Join Us!")
+
+@website.route('/alumni.html')
+def alumni():
+  return render_template('alumni.html', title="Alumni")

@@ -155,17 +155,14 @@ h3 {
   text-align: right;
 }
 
-/*Breaking legs*/
+/*Clear white boxes*/
 
 .homebox {
-  width: 280px;
-  height: 130px;
-  background: rgba(255, 255, 255, 0.6);
-  z-index: 999;
-  position: absolute;
+  @extend %box;
   top: 15%;
   right: 100px;
-  padding: 10px;
+  width: 280px;
+  height: 130px;
 
   .text {
     font-size: 20px;
@@ -173,6 +170,14 @@ h3 {
     font-style: italic;
     color: black;
   }
+}
+
+.alumnibox {
+  @extend %box;
+  width: auto;
+  height: auto;
+  top: 20%;
+  left: 100px;
 }
 
 /*All the little orange buttons*/
@@ -185,7 +190,11 @@ h3 {
   @include border-radius(10px);
 
   &:hover {
-    background: black;
+    background: $regular-gray;
+
+    .text {
+      color: black;
+    }
   }
 
   .text {

@@ -1,10 +1,16 @@
 /*THIS IS THE GLOBAL SASS FILE FOR THE SNS WEBSITE
   IT CONTAINS ALL THE SCSS FOR THE CSS CLASSES AND OTHER STYLING INFO*/
 /*This imports the mixins, placeholders, and variables from the helper folder*/
+@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
+.homebox, .alumnibox {
+  background: rgba(255, 255, 255, 0.6);
+  z-index: 999;
+  position: absolute;
+  padding: 10px; }
+
 /*COLORS*/
 /*FONTS*/
 /*This imports all outside Google fonts*/
-@import url(https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic);
 /*Global classes*/
 html, body {
   font-family: "Lora", serif;
@@ -143,21 +149,23 @@ h3 {
   color: #777;
   text-align: right; }
 
-/*Breaking legs*/
+/*Clear white boxes*/
 .homebox {
-  width: 280px;
-  height: 130px;
-  background: rgba(255, 255, 255, 0.6);
-  z-index: 999;
-  position: absolute;
   top: 15%;
   right: 100px;
-  padding: 10px; }
+  width: 280px;
+  height: 130px; }
   .homebox .text {
     font-size: 20px;
     text-align: center;
     font-style: italic;
     color: black; }
+
+.alumnibox {
+  width: auto;
+  height: auto;
+  top: 20%;
+  left: 100px; }
 
 /*All the little orange buttons*/
 .button {
@@ -169,7 +177,9 @@ h3 {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px; }
   .button:hover {
-    background: black; }
+    background: #dddddd; }
+    .button:hover .text {
+      color: black; }
   .button .text {
     text-align: center;
     color: white;
