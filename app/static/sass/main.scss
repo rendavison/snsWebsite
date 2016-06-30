@@ -174,3 +174,25 @@ h3 {
     color: black;
   }
 }
+
+/*All the little orange buttons*/
+
+.button {
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+  background: $sns-orange;
+  @include border-radius(10px);
+
+  &:hover {
+    background: black;
+  }
+
+  .text {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 2px;
+    font-style: italic;
+  }
+}

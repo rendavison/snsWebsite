@@ -159,4 +159,22 @@ h3 {
     font-style: italic;
     color: black; }
 
+/*All the little orange buttons*/
+.button {
+  width: 100px;
+  height: 30px;
+  padding: 10px;
+  background: #d37130;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px; }
+  .button:hover {
+    background: black; }
+  .button .text {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 2px;
+    font-style: italic; }
+
 /*# sourceMappingURL=main.css.map */
