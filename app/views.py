@@ -8,3 +8,7 @@ def index():
 @website.route('/about.html')
 def about():
   return render_template('about.html', title="About Us")
+
+@website.route('/tickets.html')
+def tickets():
+  return render_template('tickets.html', title="Buy Tickets")
