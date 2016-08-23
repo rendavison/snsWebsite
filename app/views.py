@@ -8,7 +8,7 @@ def get_txt(filename):
 
   filename should be a string with extension, for example, "npp.txt"
   """
-  complete_path = os.path.join(os.getcwd(), "app", "static", "txts", filename)
+  complete_path = os.path.join(os.getcwd(), "snsWebsite", "app", "static", "txts", filename)
 
   try:
     with open(complete_path, 'r') as text_file:
