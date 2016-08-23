@@ -18,8 +18,8 @@ def get_txt(filename):
 
   filename should be a string with extension, for example, "npp.txt"
   """
-  # replace getcwd with os.path.dirname, and move txts folder to the same folder as views
-  complete_path = os.path.join(os.getcwd(), "app", "static", "txts", filename)
+  current_dir = os.path.dirname(os.path.abspath(__file__))
+  complete_path = os.path.join(current_dir, "static", "txts", filename)
 
   try:
     with open(complete_path, 'r') as text_file:
