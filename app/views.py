@@ -13,6 +13,10 @@ def about():
 def tickets():
   return render_template('tickets.html', title="Buy Tickets")
 
+@website.route('/subtroupes.html')
+def subtroupes():
+  return render_template('subtroupes.html', title="SnS Subtroupes")
+
 @website.route('/join.html')
 def join():
   return render_template('join.html', title="Join Us!")
