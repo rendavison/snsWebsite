@@ -14,7 +14,7 @@ def get_txt(filename):
     with open(complete_path, 'r') as text_file:
       raw_text = text_file.read()
   except IOError:
-    raw_text = filename + " does not exist."
+    raw_text = complete_path
   
   return raw_text
 
