@@ -17,6 +17,12 @@ def get_txt(filename):
   Return the text stored in app/static/txts/filename.txt if it exists. 
 
   filename should be a string with extension, for example, "npp.txt"
+
+  If pages that use this function aren't loading properly, particularly
+  if the error message given relates to encoding or ascii, verify that in 
+  whatever file you use as an entry for the program 
+  (run.py for local, wsgi.py for pythonanywhere, etc.) is properly setting
+  its encoding to utf8. Check run.py in this repo for one way of fixing it.
   """
   complete_path = os.path.join(os.getcwd(), "app", "static", "txts", filename)
 
