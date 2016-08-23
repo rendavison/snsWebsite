@@ -2,13 +2,17 @@
 {% block content %}
 
 <!--Announcements Tab-->
-  
-  <div class="tab">announcements
-    <div class="content">
-      Attend our General Body Meeting for the coming semester, date and time TBD!
-    </div>
-  </div>
 
+    <div class="tab">announcements
+      <div class="content">
+        {% if announcements %}
+          {{ announcements }}
+        {% else %}
+          No announcements for now!
+        {% endif %}
+      </div>
+    </div>
+      
 <!--That white box that establishes how long we've been breaking legs-->
 
   <div class="homebox" align="right">

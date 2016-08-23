@@ -1,9 +1,26 @@
 from flask import render_template
 from app import website
+import os
+
+def get_txt(filename):
+  """
+  Return the text stored in app/static/txts/filename.txt if it exists. 
+
+  filename should be a string with extension, for example, "npp.txt"
+  """
+  complete_path = os.path.join(os.getcwd(), "app", "static", "txts", filename)
+
+  try:
+    with open(complete_path, 'r') as text_file:
+      raw_text = text_file.read()
+  except IOError:
+    raw_text = filename + " does not exist."
+  
+  return raw_text
 
 @website.route('/')
 def index():
-  return render_template('index.html')
+  return render_template('index.html', announcements=get_txt("announcements.txt"))
 
 @website.route('/about.html')
 def about():
@@ -15,7 +32,9 @@ def tickets():
 
 @website.route('/subtroupes.html')
 def subtroupes():
-  return render_template('subtroupes.html', title="SnS Subtroupes")
+  return render_template('subtroupes.html', title="SNS Subtroupes", 
+      tisbert_text=get_txt("tisbert.txt"), npp_text=get_txt("npp.txt"), 
+      workshopping_text=get_txt("workshopping.txt"))
 
 @website.route('/join.html')
 def join():
