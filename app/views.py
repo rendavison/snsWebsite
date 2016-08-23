@@ -18,11 +18,10 @@ def get_txt(filename):
 
   filename should be a string with extension, for example, "npp.txt"
   """
-  current_dir = os.path.dirname(os.path.abspath(__file__))
-  complete_path = os.path.join(current_dir, "static", "txts", filename)
+  complete_path = os.path.join(os.getcwd(), "app", "static", "txts", filename)
 
   try:
-    with open(complete_path, 'r') as text_file:
+    with open(complete_path) as text_file:
       raw_text = text_file.read()
   except IOError:
     raw_text = complete_path
