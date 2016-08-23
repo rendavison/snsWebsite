@@ -1,3 +1,6 @@
+"""
+Runs the website
+"""
 from app import website
 import sys
 

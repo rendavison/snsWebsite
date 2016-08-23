@@ -1,6 +1,16 @@
+"""
+Deines a relationship between relative urls and html files (i.e. WEBSITE/about links to about.html)
+
+get_txt: 
+  a helper function which retrieves the text from a file passed as input.
+  We use this function to update information on the website, such as subtroupe descriptions
+  and announcements without modifying the source html.
+"""
 from flask import render_template
 from app import website
 import os
+
+#### Helper functions ####
 
 def get_txt(filename):
   """
@@ -8,6 +18,7 @@ def get_txt(filename):
 
   filename should be a string with extension, for example, "npp.txt"
   """
+  # replace getcwd with os.path.dirname, and move txts folder to the same folder as views
   complete_path = os.path.join(os.getcwd(), "app", "static", "txts", filename)
 
   try:
@@ -17,6 +28,8 @@ def get_txt(filename):
     raw_text = complete_path
   
   return raw_text
+
+#### Website routes ####
 
 @website.route('/')
 def index():
@@ -32,6 +45,7 @@ def tickets():
 
 @website.route('/subtroupes.html')
 def subtroupes():
+  # Dynamically update subtroupes.html with: tisbert.txt, npp.txt, workshopping.txt
   return render_template('subtroupes.html', title="SNS Subtroupes", 
       tisbert_text=get_txt("tisbert.txt"), npp_text=get_txt("npp.txt"), 
       workshopping_text=get_txt("workshopping.txt"))
