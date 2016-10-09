@@ -26,7 +26,7 @@
 
     <!--This changes the topbar links when they're selected-->
     <script type="text/javascript" src="{{ url_for('static', filename='js/linkSelect.js')  }}"></script>
-
+    
     <!--This makes the favicon work-->
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
   </head>
@@ -45,26 +45,28 @@
 
       <td align="right">
         <a style="margin-right: 20px;" href="/about.html">About</a>
-        <a style="margin-right: 20px;" href="/tickets.html">Tickets</a>
-        <a style="margin-right: 20px;" href="/subtroupes.html">Subtroupes</a>
         <a style="margin-right: 20px;" href="/join.html">Join</a>
+        <a style="margin-right: 20px;" href="/subtroupes.html">Subtroupes</a>
+        <a style="margin-right: 20px;" href="/tickets.html">Tickets</a>
         <a style="margin-right: 20px;" href="/alumni.html">Alumni</a>
       </td>
 
     </tr></table>
+    
+    <div class="cheat">
+      {% block content %} {% endblock %}
+    </div>
 
-    {% block content %} {% endblock %}
+      <!--Footer-->
 
-    <!--Footer-->
-
-    <div class="footer">
-      <a href="http://www.facebook.com/snstheatre" style="margin-right: 20px;">
-        facebook.com/snstheatre
-      </a>              
-      <a href="mailto:board@snstheatre.org" style="padding-right: 80px;">
-        board@snstheatre.org
-      </a>
-    </div>  
+      <div class="footer">
+        <a href="http://www.facebook.com/snstheatre" style="margin-right: 20px;">
+          facebook.com/snstheatre
+        </a>              
+        <a href="mailto:board@snstheatre.org" style="padding-right: 80px;">
+          board@snstheatre.org
+        </a>
+      </div>  
 
   </body>
 </html>

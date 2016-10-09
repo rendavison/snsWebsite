@@ -15,7 +15,8 @@ html, body {
   background: $background-color;
   margin: 0px;
   width: 100%;
-  font-size: 14px;
+  line-height: 150%;
+  font-size: 16px;
   overflow-x: hidden;
   text-align: left;
 }
@@ -51,10 +52,10 @@ h3 {
 
 .container {
   width: 100%;
-  padding-left: 50px;
-  padding-top: 10px;
+  padding-left: 70px;
+  padding-top: 30px;
   margin-top: 95px;
-  margin-bottom: 30px;
+  margin-bottom: 30px; 
   background: transparent;
 }
 
@@ -118,6 +119,7 @@ h3 {
   text-align: right;
   font-size: 13px;
   font-style: italic;
+  line-height: 100%;
   font-family: serif;
   @include transition-duration(0.5s);
 
@@ -162,7 +164,7 @@ h3 {
   top: 15%;
   right: 100px;
   width: 280px;
-  height: 130px;
+  height: 110px;
 
   .text {
     font-size: 20px;
@@ -176,8 +178,9 @@ h3 {
   @extend %box;
   width: auto;
   height: auto;
-  top: 20%;
-  left: 100px;
+  top: 84%;
+  left: 45%;
+  background: rgba(255, 255, 255, 1);
 }
 
 /*All the little orange buttons*/
@@ -188,9 +191,11 @@ h3 {
   padding: 10px;
   background: $sns-orange;
   @include border-radius(10px);
+  @include transition-duration(0.5s);
 
   &:hover {
     background: $regular-gray;
+    @include transition-duration(0.5s);
 
     .text {
       color: black;
