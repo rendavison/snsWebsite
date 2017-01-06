@@ -82,6 +82,10 @@ h3 {
   height: 0px;
   overflow: hidden;
   opacity: 0;
+  margin: 20px 0 0 -10px;
+  color: $body-color;
+  font-family: $body-font;
+  font-size: 15px;
   z-index: 99;
   @include transition-duration(0.5s);
 }

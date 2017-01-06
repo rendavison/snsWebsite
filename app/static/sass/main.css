@@ -76,6 +76,10 @@ h3 {
   height: 0px;
   overflow: hidden;
   opacity: 0;
+  margin: 20px 0 0 -10px;
+  color: black;
+  font-family: "Lora", serif;
+  font-size: 15px;
   z-index: 99;
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
