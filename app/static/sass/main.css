@@ -70,13 +70,32 @@ h3 {
 @media screen and (min-width: 320px) and (max-width: 667px) {
   .showmemobile {
     display: inline; } }
+.navlinks {
+  background: #dddddd;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  opacity: 0;
+  z-index: 99;
+  transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s; }
+
 .mobilenav {
   width: 100%;
   background: #d37130;
-  padding: 10px;
+  padding: 20px 10px 10px 10px;
   height: 40px;
   color: white;
   font-size: 25px; }
+  .mobilenav:hover .navlinks {
+    height: 300px;
+    opacity: 1;
+    transition-duration: 0.5s;
+    -webkit-transition-duration: 0.5s;
+    -moz-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s; }
 
 /*Top navigation bar*/
 .topbar {
