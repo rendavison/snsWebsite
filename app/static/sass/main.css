@@ -94,7 +94,8 @@ h3 {
   color: white;
   font-size: 25px; }
   .mobilenav:hover .navlinks {
-    height: 50%;
+    height: 500px;
+    padding: 10px;
     opacity: 1;
     transition-duration: 0.5s;
     -webkit-transition-duration: 0.5s;
