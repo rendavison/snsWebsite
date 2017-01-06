@@ -85,6 +85,12 @@ h3 {
   font-size: 20px;
 }
 
+/*Mobile compatibility code*/
+
+@media screen and (min-width: 320px) and (max width: 1024px) {
+  width: 100%;  
+}
+
 /*Top navigation bar*/
 
 .topbar {
