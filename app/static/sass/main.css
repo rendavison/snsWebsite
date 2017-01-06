@@ -74,7 +74,7 @@ h3 {
   width: 100%;
   background: #d37130;
   padding: 10px;
-  height: 75px;
+  height: 40px;
   color: white;
   font-size: 25px; }
 
@@ -101,6 +101,12 @@ h3 {
     float: left; }
 
 /*Announcements*/
+@media screen and (min-width: 320px) and (max-width: 667px) {
+  .content {
+    display: none; }
+
+  .tab {
+    display: none; } }
 .content {
   background: #dddddd;
   width: 260px;
