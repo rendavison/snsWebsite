@@ -66,16 +66,22 @@ h3 {
 
 /*Mobile exclusive classes*/
 
-@media screen and (min-width: 320px) and (max-width: 667px) {
-  width: 100%;
+.showmemobile {
+  display: none;
+}
 
-  .mobilenav {
-    width: 100%;
-    background: $sns-orange;
-    padding: 10px;
-    color: white;
-    font-size: 25px;
+@media screen and (min-width: 320px) and (max-width: 667px) {
+  .showmemobile {
+    display: inline;
   }
+ }
+
+.mobilenav {
+  width: 100%;
+  background: $sns-orange;
+  padding: 10px;
+  color: white;
+  font-size: 25px;
 }
 
 /*Top navigation bar*/

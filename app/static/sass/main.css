@@ -64,14 +64,19 @@ h3 {
   background: transparent; }
 
 /*Mobile exclusive classes*/
+.showmemobile {
+  display: none; }
+
 @media screen and (min-width: 320px) and (max-width: 667px) {
+  .showmemobile {
+    display: inline; } }
+.mobilenav {
   width: 100%;
-  .mobilenav {
-    width: 100%;
-    background: #d37130;
-    padding: 10px;
-    color: white;
-    font-size: 25px; } }
+  background: #d37130;
+  padding: 10px;
+  color: white;
+  font-size: 25px; }
+
 /*Top navigation bar*/
 .topbar {
   background: #d37130;
