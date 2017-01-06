@@ -80,7 +80,7 @@ h3 {
   color: black;
   font-family: "Lora", serif;
   font-size: 15px;
-  z-index: 99;
+  z-index: 999;
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
@@ -195,6 +195,10 @@ h3 {
   .slideshow img {
     width: 100%; }
 
+@media screen and (min-width: 320px) and (max-width: 667px) {
+  .slideshow {
+    margin-top: 0px;
+    z-index: -1; } }
 /*Informational footer*/
 .footer {
   width: 100%;
