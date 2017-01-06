@@ -63,11 +63,15 @@ h3 {
   margin-bottom: 30px;
   background: transparent; }
 
-/*Mobile compatibility code*/
+/*Mobile exclusive classes*/
 @media screen and (min-width: 320px) and (max-width: 667px) {
   width: 100%;
-  .topbar {
-    display: none; } }
+  .mobilenav {
+    width: 100%;
+    background: #d37130;
+    padding: 10px;
+    color: white;
+    font-size: 25px; } }
 /*Top navigation bar*/
 .topbar {
   background: #d37130;
