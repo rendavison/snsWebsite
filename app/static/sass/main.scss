@@ -80,6 +80,7 @@ h3 {
   width: 100%;
   background: $sns-orange;
   padding: 10px;
+  height: 75px;
   color: white;
   font-size: 25px;
 }
@@ -192,6 +193,11 @@ h3 {
 
 
 /*Clear white boxes*/
+@media screen and (min-width: 320px) and (max-width: 667px) {
+  .homebox {
+    display: none;
+  }
+}
 
 .homebox {
   @extend %box;

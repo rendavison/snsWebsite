@@ -74,6 +74,7 @@ h3 {
   width: 100%;
   background: #d37130;
   padding: 10px;
+  height: 75px;
   color: white;
   font-size: 25px; }
 
@@ -178,6 +179,9 @@ h3 {
   padding-top: 20px; }
 
 /*Clear white boxes*/
+@media screen and (min-width: 320px) and (max-width: 667px) {
+  .homebox {
+    display: none; } }
 .homebox {
   top: 15%;
   right: 100px;
