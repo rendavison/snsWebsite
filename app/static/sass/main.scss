@@ -252,6 +252,12 @@ h3 {
   padding-top: 20px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 667px) {
+  .footer {
+    font-size: 15px;
+  }
+}
+
 
 /*Clear white boxes*/
 @media screen and (min-width: 320px) and (max-width: 667px) {
