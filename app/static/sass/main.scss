@@ -103,6 +103,7 @@ h3 {
       height: 400px;
       padding: 10px;
       opacity: 1;
+      z-index: 999;
       @include transition-duration(0.5s);
     }
   }
