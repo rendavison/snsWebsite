@@ -123,8 +123,7 @@ h3 {
   height: 50px;
   text-align: left;
   bottom: 0;
-  position: absolute;
-  z-index: -1; }
+  position: relative; }
 
 /*Top navigation bar*/
 .topbar {
