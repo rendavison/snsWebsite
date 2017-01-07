@@ -89,8 +89,9 @@ h3 {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s; }
-  .navlinks ul {
-    list-style-image: url("http://i63.tinypic.com/5yx6qx.png"); }
+  .navlinks li:before {
+    content: "U+25B6";
+    padding-right: 5px; }
 
 .mobilenav {
   width: 100%;

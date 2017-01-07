@@ -94,8 +94,9 @@ h3 {
   z-index: 999;
   @include transition-duration(0.5s);
 
-  ul {
-    list-style-image: url('http://i63.tinypic.com/5yx6qx.png');
+  li:before {
+    content: "U+25B6";
+    padding-right: 5px;
   }
 }
 
