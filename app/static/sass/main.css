@@ -83,12 +83,14 @@ h3 {
   margin: 25px 0 0 -10px;
   color: black;
   font-family: "Lora", serif;
-  font-size: 15px;
+  font-size: 20px;
   z-index: 999;
   transition-duration: 0.5s;
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s; }
+  .navlinks ul {
+    list-style-image: url("http://i63.tinypic.com/5yx6qx.png"); }
 
 .mobilenav {
   width: 100%;

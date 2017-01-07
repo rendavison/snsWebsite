@@ -90,9 +90,13 @@ h3 {
   margin: 25px 0 0 -10px;
   color: $body-color;
   font-family: $body-font;
-  font-size: 15px;
+  font-size: 20px;
   z-index: 999;
   @include transition-duration(0.5s);
+
+  ul {
+    list-style-image: url('http://i63.tinypic.com/5yx6qx.png');
+  }
 }
 
 .mobilenav {
