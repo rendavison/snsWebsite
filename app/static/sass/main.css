@@ -123,7 +123,7 @@ h3 {
   height: 50px;
   text-align: left;
   bottom: 0;
-  position: relative; }
+  position: fixed; }
 
 /*Top navigation bar*/
 .topbar {
