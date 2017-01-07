@@ -94,8 +94,12 @@ h3 {
   z-index: 999;
   @include transition-duration(0.5s);
 
+  ul {
+    list-style-type: none;
+  }
+
   li:before {
-    content: "U+25B6";
+    content: "▶";
     padding-right: 5px;
   }
 }

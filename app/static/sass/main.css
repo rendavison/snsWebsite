@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*THIS IS THE GLOBAL SASS FILE FOR THE SNS WEBSITE
   IT CONTAINS ALL THE SCSS FOR THE CSS CLASSES AND OTHER STYLING INFO*/
 /*This imports the mixins, placeholders, and variables from the helper folder*/
@@ -89,8 +90,10 @@ h3 {
   -webkit-transition-duration: 0.5s;
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s; }
+  .navlinks ul {
+    list-style-type: none; }
   .navlinks li:before {
-    content: "U+25B6";
+    content: "▶";
     padding-right: 5px; }
 
 .mobilenav {
