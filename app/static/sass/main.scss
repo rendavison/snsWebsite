@@ -126,6 +126,16 @@ h3 {
   }
 }
 
+.mobilefooter {
+  width: 100%;
+  background: $regular-gray;
+  padding: 20px;
+  height: 50px;
+  text-align: left;
+  position: absolute;
+  bottom: 0;
+}
+
 /*Top navigation bar*/
 
 .topbar {
@@ -254,7 +264,7 @@ h3 {
 
 @media screen and (min-width: 320px) and (max-width: 667px) {
   .footer {
-    font-size: 15px;
+    display: none;
   }
 }
 

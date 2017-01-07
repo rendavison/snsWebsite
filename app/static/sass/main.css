@@ -116,6 +116,15 @@ h3 {
     -moz-transition-duration: 0.5s;
     -o-transition-duration: 0.5s; }
 
+.mobilefooter {
+  width: 100%;
+  background: #dddddd;
+  padding: 20px;
+  height: 50px;
+  text-align: left;
+  position: absolute;
+  bottom: 0; }
+
 /*Top navigation bar*/
 .topbar {
   background: #d37130;
@@ -229,7 +238,7 @@ h3 {
 
 @media screen and (min-width: 320px) and (max-width: 667px) {
   .footer {
-    font-size: 15px; } }
+    display: none; } }
 /*Clear white boxes*/
 @media screen and (min-width: 320px) and (max-width: 667px) {
   .homebox {
