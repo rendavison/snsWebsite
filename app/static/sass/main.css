@@ -70,6 +70,10 @@ h3 {
 @media screen and (min-width: 320px) and (max-width: 667px) {
   .showmemobile {
     display: inline; } }
+.mobilecon {
+  width: 100%;
+  z-index: -1; }
+
 .navlinks {
   background: #dddddd;
   width: 100%;
