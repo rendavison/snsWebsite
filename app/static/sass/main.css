@@ -197,7 +197,9 @@ h3 {
 
 @media screen and (min-width: 320px) and (max-width: 667px) {
   .slideshow {
-    display: none; } }
+    display: none; }
+    .slideshow img {
+      display: none; } }
 /*Informational footer*/
 .footer {
   width: 100%;
