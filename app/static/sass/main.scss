@@ -79,7 +79,6 @@ h3 {
 .mobilecon {
   width: 100%;
   z-index: -1;
-  padding: 10px;
 }
 
 .navlinks {
@@ -97,12 +96,11 @@ h3 {
 
   ul {
     list-style-type: none;
-    line-height: 130%;
   }
 
   li:before {
     content: "▸";
-    padding-right: 10px;
+    padding-right: 5px;
   }
 }
 
