@@ -1,5 +1,4 @@
-$(document).ready(function(){
-  if ($(window).width() > 667) {
+$(document).ready(function({
     $('.slideshow').slick({
       infinite: true,
       autoplay: true,
@@ -7,6 +6,5 @@ $(document).ready(function(){
       speed: 500,
       fade: true,
       cssEase: 'linear',
-    }
   });
 });
