@@ -120,8 +120,12 @@ h3 {
   padding: 20px;
   height: 50px;
   text-align: left;
+<<<<<<< HEAD
   bottom: 0;
   position: relative; }
+=======
+  margin-bottom: 0px; }
+>>>>>>> parent of 030f4f7... ACTUALLY fixed footer issue
 
 /*Top navigation bar*/
 .topbar {
