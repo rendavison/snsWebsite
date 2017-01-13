@@ -1,24 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
 
-<!--Mobile Content-->
-<div class="showmemobile">
-  <div class="mobilecon">
-    <h1>Scotch'n'Soda Theatre</h1>
-    <h3><b>Breaking legs at Carnegie Mellon University since 1907!</b><p />
-    To see images of our past performances, consider viewing us on desktop!</h3>
-  </div>
-</div>
-
 <!--Announcements Tab-->
 
     <div class="tab">announcements
       <div class="content">
-        <a href="https://www.eventbrite.com/e/the-addams-family-tickets-28518163595">Come see the Addam's Family!</a>
+        <a href="https://www.eventbrite.com/e/murder-ballad-tickets-29809942340">Get your tickets for our December slot show, Murder Ballad!</a> 
       </div>
     </div>
-      
+
 <!--That white box that establishes how long we've been breaking legs-->
+
 
   <div class="homebox" align="right">
     <h1>
@@ -37,6 +29,7 @@
     <div><img src="{{ url_for('static', filename='images/homepage3.jpg') }}"></div>
     <div><img src="{{ url_for('static', filename='images/homepage4.jpg') }}"></div>
     <div><img src="{{ url_for('static', filename='images/homepage5.jpg') }}"></div>
+    <div><img src="{{ url_for('static', filename='images/homepage6.jpg') }}"></div>
   </div>
 
   <script type="text/javascript" src="{{ url_for('static', filename='slick/slick.min.js') }}"></script>

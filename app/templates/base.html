@@ -1,6 +1,6 @@
 <!-- The base html file for the SnS website.
 
-  This will allow us to use template inheritance in python flask 
+  This will allow us to use template inheritance in python flask
   to keep the website pages in sync.
 
 -->
@@ -9,11 +9,11 @@
   <head>
 
     <!--This controls the webpage title-->
-    {% if title %} 
+    {% if title %}
       <title>SnS - {{ title }}</title>
-    {% else %} 
+    {% else %}
       <title>Scotch'n'Soda Theatre</title>
-    {% endif %} 
+    {% endif %}
 
     <!--This imports the main CSS and the slideshow CSS-->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='sass/main.css')  }}">
@@ -26,50 +26,24 @@
 
     <!--This changes the topbar links when they're selected-->
     <script type="text/javascript" src="{{ url_for('static', filename='js/linkSelect.js')  }}"></script>
-    
+
     <!--This makes the favicon work-->
     <link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
-<<<<<<< HEAD
 
     <!-- This provides a preview image for Facebook-->
     <meta property="og:image" content="/static/images/fb.png"/>
     <meta property="og:description" content="Scotch'n'Soda is Carnegie Mellon University's premiere student theatre organization. We are composed of passionate students from all majors and walks of life."/>
-
-    <!--This helps with mobile compatibility-->
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-=======
->>>>>>> parent of 20661d1... backup version jan 5
   </head>
 
   <body>
 
-    <!--Everything mobile exclusive-->
+    <!--Navigation Bar-->
 
     <div class="showmemobile">
-<<<<<<< HEAD
-      
-      <!--Navigation Bar-->
-      <div class="mobilenav">Navigation &#8595;
-        <div class="navlinks">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about.html">About</a></li>
-            <li><a href="/join.html">Join</a></li>
-            <li><a href="/subtroupes.html">Subtroupes</a></li>
-            <li><a href="/tickets.html">Tickets</a></li>
-            <li><a href="/alumni.html">Alumni</a></li>
-          </ul> 
-        </div>
-      </div>
-
-=======
       <div class="mobilebanner">
         Hi!  Our site is currently not mobile compatible.  Please consider viewing our site on desktop.
-      </div> 
->>>>>>> parent of 20661d1... backup version jan 5
+      </div>
     </div>
-
-    <!--Navigation Bar-->
 
     <table class="topbar"><tr>
 
@@ -88,13 +62,7 @@
       </td>
 
     </tr></table>
-<<<<<<< HEAD
 
-    <!--Individual page content-->
-
-=======
-    
->>>>>>> parent of 20661d1... backup version jan 5
     <div class="cheat">
       {% block content %} {% endblock %}
     </div>
@@ -104,11 +72,11 @@
       <div class="footer">
         <a href="http://www.facebook.com/snstheatre" style="margin-right: 20px;">
           facebook.com/snstheatre
-        </a>              
+        </a>
         <a href="mailto:board@snstheatre.org" style="padding-right: 80px;">
           board@snstheatre.org
         </a>
-      </div>  
+      </div>
 
   </body>
 </html>
