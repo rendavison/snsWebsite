@@ -209,19 +209,22 @@ h3 {
 /************
 MOBILE COMPATIBLE CSS
 ************/
+.goaway {
+  display: inline; }
+
 @media only screen and (max-device-width: 800px) {
+  .goaway {
+    /*a very cheaty way to make elements that aren't listening disapper*/
+    display: none; }
+
   .content,
   .tab,
-  .homebox,
-  .slideshow img {
+  .homebox {
     display: none; }
 
   .topbar {
     height: 200px; }
-    .topbar a {
-      display: none; }
     .topbar img {
-      display: inline;
       height: 100px;
       float: right; } }
 
