@@ -228,7 +228,8 @@ MOBILE COMPATIBLE CSS
 @media only screen and (max-device-width: 800px) {
   .content,
   .tab,
-  .homebox {
+  .homebox,
+  .slidehow  {
     display: none;
   }
 
@@ -239,9 +240,5 @@ MOBILE COMPATIBLE CSS
       display: none;
     }
 
-    img {
-      float: right;
-      height: 80px;
-    }
   }
 }

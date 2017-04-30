@@ -212,15 +212,13 @@ MOBILE COMPATIBLE CSS
 @media only screen and (max-device-width: 800px) {
   .content,
   .tab,
-  .homebox {
+  .homebox,
+  .slidehow {
     display: none; }
 
   .topbar {
     height: 200px; }
     .topbar a {
-      display: none; }
-    .topbar img {
-      float: right;
-      height: 80px; } }
+      display: none; } }
 
 /*# sourceMappingURL=main.css.map */
