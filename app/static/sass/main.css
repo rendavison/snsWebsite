@@ -209,7 +209,7 @@ h3 {
 /************
 MOBILE COMPATIBLE CSS
 ************/
-@media screen and (max-width: 800px) {
+@media only screen and (max-device-width: 800px) {
   .content,
   .tab {
     display: none; } }
