@@ -242,7 +242,9 @@ MOBILE COMPATIBLE CSS
   }
 
   .slideshow {
-    display: none;
+    img {
+      display: none;
+    }
   }
 
   .topbar {
