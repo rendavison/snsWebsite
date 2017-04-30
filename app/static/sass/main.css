@@ -215,9 +215,11 @@ MOBILE COMPATIBLE CSS
   .homebox {
     display: none; }
 
-  .topbar a {
-    display: none; }
-  .topbar img {
-    float: right; } }
+  .topbar {
+    height: 150px; }
+    .topbar a {
+      display: none; }
+    .topbar img {
+      float: left; } }
 
 /*# sourceMappingURL=main.css.map */

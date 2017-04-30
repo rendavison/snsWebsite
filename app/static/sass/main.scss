@@ -233,12 +233,14 @@ MOBILE COMPATIBLE CSS
   }
 
   .topbar {
+    height: 150px;
+
     a {
       display: none;
     }
 
     img {
-      float: right;
+      float: left;
     }
   }
 }
