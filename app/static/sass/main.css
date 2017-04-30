@@ -222,6 +222,9 @@ MOBILE COMPATIBLE CSS
   .homebox {
     display: none; }
 
+  .slideshow {
+    display: none; }
+
   .topbar {
     height: 200px; }
     .topbar img {
