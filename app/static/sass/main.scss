@@ -227,7 +227,8 @@ MOBILE COMPATIBLE CSS
 
 @media only screen and (max-device-width: 800px) {
   .content,
-  .tab {
+  .tab,
+  .hombox  {
     display: none;
   }
 }
