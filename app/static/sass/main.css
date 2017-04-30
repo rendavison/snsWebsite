@@ -214,7 +214,7 @@ MOBILE COMPATIBLE CSS
   .tab {
     display: none; }
 
-  .topbar {
-    font-size: 15px; } }
+  .topbar a {
+    font-size: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
