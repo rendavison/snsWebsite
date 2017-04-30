@@ -225,15 +225,9 @@ h3 {
 MOBILE COMPATIBLE CSS
 ************/
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .content,
   .tab {
     display: none;
-  }
-
-  .topbar {
-    a {
-      font-size: 10px;
-    }
   }
 }
