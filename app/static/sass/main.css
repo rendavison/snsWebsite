@@ -213,7 +213,7 @@ MOBILE COMPATIBLE CSS
   .content,
   .tab,
   .homebox,
-  .slideshow {
+  .slideshow img {
     display: none; }
 
   .topbar {
