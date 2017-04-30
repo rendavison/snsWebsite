@@ -212,6 +212,9 @@ MOBILE COMPATIBLE CSS
 @media screen and (max-width: 600px) {
   .content,
   .tab {
-    display: none; } }
+    display: none; }
+
+  .topbar a {
+    font-size: 15px; } }
 
 /*# sourceMappingURL=main.css.map */
