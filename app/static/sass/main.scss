@@ -64,27 +64,6 @@ h3 {
   background: transparent;
 }
 
-/*Mobile 'sorry we're not compatible yet' banner*/
-
-.showmemobile {
-  display: none;
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  .showmemobile {
-    display: inline;
-  }
-}
-
-.mobilebanner {
-  width: 100%;
-  background: black;
-  padding: 45px;
-  color: #eee;
-  text-align: center;
-  font-size: 20px;
-}
-
 /*Top navigation bar*/
 
 .topbar {
@@ -239,5 +218,16 @@ h3 {
     font-size: 20px;
     padding-top: 2px;
     font-style: italic;
+  }
+}
+
+/************
+MOBILE COMPATIBLE CSS
+************/
+
+@media screen and (max-width: 600px) {
+  .content,
+  .tab {
+    display: none;
   }
 }
