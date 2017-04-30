@@ -23,7 +23,7 @@
 
 <!--Slick Carousel | Made by kenwheeler at Github  and modified by me-->
 
-  <div class="slideshow goaway" align="center">
+  <div class="slideshow" align="center">
     <div><img src="{{ url_for('static', filename='images/homepage1.jpg') }}"></div>
     <div><img src="{{ url_for('static', filename='images/homepage2.jpg') }}"></div>
     <div><img src="{{ url_for('static', filename='images/homepage3.jpg') }}"></div>
@@ -32,7 +32,8 @@
     <div><img src="{{ url_for('static', filename='images/homepage6.jpg') }}"></div>
   </div>
 
-  <script type="text/javascript" src="{{ url_for('static', filename='slick/slick.min.js') }}"></script>
-  <script type="text/javascript" src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
-
+  <div class"goaway">
+    <script type="text/javascript" src="{{ url_for('static', filename='slick/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/slideshow.js') }}"></script>
+  </div>
 {% endblock %}
