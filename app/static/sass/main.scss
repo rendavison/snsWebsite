@@ -231,4 +231,14 @@ MOBILE COMPATIBLE CSS
   .homebox {
     display: none;
   }
+
+  .topbar {
+    a {
+      display: none;
+    }
+
+    img {
+      float: right;
+    }
+  }
 }

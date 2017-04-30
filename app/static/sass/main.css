@@ -213,6 +213,11 @@ MOBILE COMPATIBLE CSS
   .content,
   .tab,
   .homebox {
-    display: none; } }
+    display: none; }
+
+  .topbar a {
+    display: none; }
+  .topbar img {
+    float: right; } }
 
 /*# sourceMappingURL=main.css.map */
