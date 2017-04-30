@@ -219,6 +219,10 @@ MOBILE COMPATIBLE CSS
   .topbar {
     height: 200px; }
     .topbar a {
-      display: none; } }
+      display: none; }
+    .topbar img {
+      display: inline;
+      height: 100px;
+      float: right; } }
 
 /*# sourceMappingURL=main.css.map */
