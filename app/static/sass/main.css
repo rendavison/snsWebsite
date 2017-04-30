@@ -216,10 +216,11 @@ MOBILE COMPATIBLE CSS
     display: none; }
 
   .topbar {
-    height: 150px; }
+    height: 200px; }
     .topbar a {
       display: none; }
     .topbar img {
-      float: left; } }
+      float: right;
+      height: 80px; } }
 
 /*# sourceMappingURL=main.css.map */
