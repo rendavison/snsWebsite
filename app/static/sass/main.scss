@@ -229,11 +229,20 @@ MOBILE COMPATIBLE CSS
   display: inline;
 }
 
+.showme {
+  display: none;
+}
+
 @media only screen and (max-device-width: 800px) {
   .goaway {
     /*a very cheaty way to make elements that aren't listening disapper*/
     display: none;
   } 
+   
+  .showme {
+    /*a less cheaty way to make elements only appear on mobile*/
+    display: inline;
+  }
   
   .content,
   .tab,
