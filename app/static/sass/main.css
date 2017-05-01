@@ -236,12 +236,13 @@ MOBILE COMPATIBLE CSS
       float: right; }
 
   h1 {
-    font-size: 80px;
-    line-height: 150%;
-    padding-top: 120px; }
+    font-size: 70px;
+    line-height: 135%;
+    padding-top: 150px; }
 
   h3 {
-    font-size: 40px;
-    line-height: 135%; } }
+    font-size: 50px;
+    line-height: 135%;
+    padding-left: 10px; } }
 
 /*# sourceMappingURL=main.css.map */
